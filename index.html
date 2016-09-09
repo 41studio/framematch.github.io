@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Frame Match</title>
+	<meta name="description" content="The plugin will detect your mouse wheel and swipe gestures to determine which way the page should scroll." />
+	<meta name="author" content="Review App" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="css/onepage-scroll.css" />
+	<script src="js/modernizr.custom.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<div class="main">
+		<section class="page one">
+			<div class="intro">
+				<div class="intro-body">
+					<div class="table-wrap">
+						<div class="table-cell">
+							<div class="container-fluid custom-container1">
+								<div class="row">
+									<div class="col-md-6 col-sm-12 col-xs-6 custom-page1">
+										<img src="img/apps1.png">
+									</div>
+									<div class="col-md-6 col-sm-12 col-xs-6 custom-page2">
+										<h2>FRAME MATCH</h2>
+										<center><hr width="10%" style="height:4px;background:white;margin-top:10px;"></center>
+										<h3>Capture your special event with awesome props and frames.</h3>
+										<button class="btn btn-default btn-download-custom hvr-float-shadow download-button" >Download App &nbsp&nbsp<i class="glyphicon glyphicon-download-alt"></i>
+										</button><br><br>
+										<img src="img/android.png" class="hvr-wobble-vertical">&nbsp&nbsp&nbsp<img src="img/google-play.png" class="hvr-wobble-vertical">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="page two">
+			<div class="container-fluid custom-container2">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 custom-page3">
+						<img src="img/photo.png">
+						<h2>One</h2>
+						<center><hr width="10%" style="height:4px;background:#FE836A;margin-top:10px;border:0px;"></center>
+						<p>Every special moment like graduation and wedding usually have photo booth.</p>
+						<p>This is not about the photo, this is about capture the moment.</p>
+						<p>But,,</p>
+						<p>Still waiting for the result with the frame of the event?</p>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 custom-page4">
+						<img src="img/thumbs-up.png">
+						<h2>Two</h2>
+						<center><hr width="10%" style="height:4px;background:#FE836A;margin-top:10px;border:0px;"></center>
+						<p>No wait again!</p>
+						<p>Capture the special moment with the frame of event. No need for wait again!</p>
+						<p>You are the event owner? prepare your uniq frame and share it to the people</p>
+					</div>
+					<div class="col-lg-6 col-md-12 col-sm-6 col-xs-12 custom-page5">
+						<img src="img/take-picture.png">
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="page three">
+			<div class="container-fluid custom-container3">
+			<div class="row">
+				<div class="col-md-6 col-xs-12 custom-page5">
+					<img src="img/upload-frame.png" class="img-responsive">
+				</div>
+				<div class="col-md-6 col-xs-12 custom-page6" >
+				<div class="hide-this">
+				</div>
+				<div class="supported-container">
+					<div class="custom-supported">
+					<h3>Supported by :</h3>
+					<a href="https://www.41studio.com"><img src="img/41studio.png"></a>
+					<center><hr width="10%" style="height:3px;background:white;margin:5px;"></center>
+						<p>&copy 2016 Frame Match Allright Reserved.</p>
+					</div>
+				</div>
+				</div>
+				
+				</div>
+			</div>
+		</section>
+	</div>
+  <script type="text/javascript">
+  	$(".download-button").on("click", function(){
+  		window.location.href = "https://play.google.com/store/apps/details?id=com.fourtyonestudio.framematch"
+  	});
+    $('.variable-width').slick({
+		  dots: true,
+		  infinite: true,
+		  speed: 300,
+		  slidesToShow: 1,
+		  centerMode: true,
+		  variableWidth: true,
+		  autoplay: true,
+		  autoplaySpeed: 2000
+		});
+  </script>
+	<script type="text/javascript">
+		$(".main").onepage_scroll({
+			sectionContainer: "section",
+		});
+	</script>
+</body>
+</html>
